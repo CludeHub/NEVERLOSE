@@ -866,6 +866,7 @@ Sound2.Ended:Connect(function()
 		ImageButtons.ZIndex = 4
 		ImageButtons.Image = "http://www.roblox.com/asset/?id=6031280882"
 		ImageButtons.ScaleType = Enum.ScaleType.Fit
+	    ImageButtons.Visible = false
 
 		ImageButtons.MouseButton1Click:Connect(function()
 			local Sound2 = Instance.new("Sound")
