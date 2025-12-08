@@ -1129,9 +1129,6 @@ SaveButton_2179.MouseLeave:Connect(function()
 	SaveButton_2179.TextTransparency = 0.3
 	Icon_5763.ImageTransparency = 0.3
 end)
--- style
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/SourceCludeLib/refs/heads/main/Style.lua"))()
---
 	
 -- DraggingToggle
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/SourceCludeLib/refs/heads/main/DragToggleSetting.lua"))()
