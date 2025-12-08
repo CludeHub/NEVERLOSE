@@ -273,21 +273,7 @@ local NEVERLOSE = {
 	_Name="NEVERLOSE"
 }
 
-function NEVERLOSE:AddWindow(NameScriptHub,Text,name,UICustomSize)
-	    if name == "neon" or name == "original" or name == "darkblue" then
-		NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(1, 17, 33)
-		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(9, 9, 19)
-		NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(7, 7, 17)
-		NEVERLOSE.Themes.MewColor1 = Color3.fromRGB(9, 9, 19)
-		NEVERLOSE.Themes.MewColor2 = Color3.fromRGB(7, 7, 17)
-		NEVERLOSE.Themes.TraceColor = Color3.fromRGB(0, 76, 99)
-		NEVERLOSE.Themes.MainColor = Color3.fromRGB(19, 176, 243)
-		NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(3, 6, 25)
-		NEVERLOSE.Themes.SectionColor = Color3.fromRGB(0, 17, 33)
-		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(3, 35, 50)
-		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(2, 5, 22)
-		NEVERLOSE.Themes.SearchColor = Color3.fromRGB(0, 17, 35)
-	end
+function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 	
 	local WindowFunctinos={}
 	local ToggleUI=false
