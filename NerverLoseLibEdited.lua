@@ -1542,7 +1542,8 @@ Sound2.Ended:Connect(function()
 			local UICorner_2 = Instance.new("UICorner")
 
 			
-local SectionHead = Instance.new('Frame')
+local SectionHead = Instance.new("Frame")
+SectionHead.Name = "Section"
 SectionHead.Position = UDim2.new(0,0,0,0)
 SectionHead.Size = UDim2.new(0.9700000286102295,0,0,13)
 SectionHead.AnchorPoint = Vector2.new(0,0)
@@ -1552,27 +1553,27 @@ SectionHead.BorderSizePixel = 0
 SectionHead.ZIndex = 5
 SectionHead.AutomaticSize = Enum.AutomaticSize.Y
 SectionHead.Parent = (parentname=="left"and Left) or (parentname=="right"and Right) or nil
-			
-local Headers = Instance.new('TextLabel')
-Headers.Position = UDim2.new(0.5,0,-0.009999999776482582,0)
-Headers.Size = UDim2.new(1,0,0.10000000149011612,0)
-Headers.AnchorPoint = Vector2.new(0.5,0)
-Headers.BackgroundColor3 = Color3.fromRGB(255,255,255)
-Headers.BackgroundTransparency = 1
-Headers.BorderSizePixel = 0
-Headers.Text = SectionName or "Section"
-Headers.TextColor3 = Color3.fromRGB(255,255,255)
-Headers.TextScaled = true
-Headers.TextSize = 8
-Headers.Font = Enum.Font.ArialBold
-Headers.TextTransparency = 0.699999988079071
-Headers.ZIndex = 10
-Headers.TextXAlignment = Enum.TextXAlignment.Left
-Headers.Parent = SectionHead
+
+Header.Name = "Header"
+Header.Position = UDim2.new(0.5,0,-0.009999999776482582,0)
+Header.Size = UDim2.new(1,0,0.10000000149011612,0)
+Header.AnchorPoint = Vector2.new(0.5,0)
+Header.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Header.BackgroundTransparency = 1
+Header.BorderSizePixel = 0
+Header.Text = SectionName or "Section"
+Header.TextColor3 = Color3.fromRGB(255,255,255)
+Header.TextScaled = true
+Header.TextSize = 8
+Header.Font = Enum.Font.ArialBold
+Header.TextTransparency = 0.699999988079071
+Header.ZIndex = 10
+Header.TextXAlignment = Enum.TextXAlignment.Left
+Header.Parent = SectionHead
 			
 local UIAspectRatioConstraint = Instance.new('UIAspectRatioConstraint')
 UIAspectRatioConstraint.AspectRatio = 19
-UIAspectRatioConstraint.Parent = Headers
+UIAspectRatioConstraint.Parent = Header
 			
 
 			Section.Name = "Elements"
