@@ -1641,7 +1641,7 @@ UIAspectRatioConstraint.Parent = Headers
 			table.insert(NEVERLOSE.auto_function,update_section_size)
 
 			Section:GetPropertyChangedSignal('Size'):Connect(function()
-				if Section.Size.Y.Offset <= 1 then
+				if Section.Size.Y.Offset <= 0 then
 					Section.Visible=false
 				else
 					Section.Visible=true
