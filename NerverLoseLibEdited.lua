@@ -1545,7 +1545,7 @@ Sound2.Ended:Connect(function()
 local SectionHead = Instance.new("Frame")
 SectionHead.Name = "Section"
 SectionHead.Position = UDim2.new(0,0,0,0)
-SectionHead.Size = UDim2.new(0.9700000286102295,0,0,13)
+SectionHead.Size = UDim2.new(0.97,0,0,13)
 SectionHead.AnchorPoint = Vector2.new(0,0)
 SectionHead.BackgroundColor3 = Color3.fromRGB(0,17,33)
 SectionHead.BackgroundTransparency = 1
@@ -1555,8 +1555,8 @@ SectionHead.AutomaticSize = Enum.AutomaticSize.Y
 SectionHead.Parent = (parentname=="left"and Left) or (parentname=="right"and Right) or nil
 
 Header.Name = "Header"
-Header.Position = UDim2.new(0.5,0,-0.009999999776482582,0)
-Header.Size = UDim2.new(1,0,0.10000000149011612,0)
+Header.Position = UDim2.new(0.5,0,-0.009,0)
+Header.Size = UDim2.new(1,0,0.1,0)
 Header.AnchorPoint = Vector2.new(0.5,0)
 Header.BackgroundColor3 = Color3.fromRGB(255,255,255)
 Header.BackgroundTransparency = 1
@@ -1583,7 +1583,7 @@ UIAspectRatioConstraint.Parent = Header
 			Section.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			Section.BorderSizePixel = 0
 			Section.Position = UDim2.new(0, 0, 0, 17)
-			Section.Size = UDim2.new(0.970000029, 0, 0, 0)
+			Section.Size = UDim2.new(1, 0, 0, 0)
 			Section.ZIndex = 5
 
 
