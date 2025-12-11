@@ -1541,8 +1541,42 @@ Sound2.Ended:Connect(function()
 			local lay = Instance.new("Frame")
 			local UICorner_2 = Instance.new("UICorner")
 
-			Section.Name = "Section"
-			Section.Parent = (parentname=="left"and Left) or (parentname=="right"and Right) or nil
+			
+local SectionHead = Instance.new('Frame')
+SectionHead.Position = UDim2.new(0,0,0,0)
+SectionHead.Size = UDim2.new(0.9700000286102295,0,0,13)
+SectionHead.AnchorPoint = Vector2.new(0,0)
+SectionHead.BackgroundColor3 = Color3.fromRGB(0,17,33)
+SectionHead.BackgroundTransparency = 1
+SectionHead.BorderSizePixel = 0
+SectionHead.ZIndex = 5
+SectionHead.AutomaticSize = Enum.AutomaticSize.Y
+SectionHead.Parent = (parentname=="left"and Left) or (parentname=="right"and Right) or nil
+			
+local Headers = Instance.new('TextLabel')
+Headers.Position = UDim2.new(0.5,0,-0.009999999776482582,0)
+Headers.Size = UDim2.new(1,0,0.10000000149011612,0)
+Headers.AnchorPoint = Vector2.new(0.5,0)
+Headers.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Headers.BackgroundTransparency = 1
+Headers.BorderSizePixel = 0
+Headers.Text = SectionName or "Section"
+Headers.TextColor3 = Color3.fromRGB(255,255,255)
+Headers.TextScaled = true
+Headers.TextSize = 8
+Headers.Font = Enum.Font.ArialBold
+Headers.TextTransparency = 0.699999988079071
+Headers.ZIndex = 10
+Headers.TextXAlignment = Enum.TextXAlignment.Left
+Headers.Parent = SectionHead
+			
+local UIAspectRatioConstraint = Instance.new('UIAspectRatioConstraint')
+UIAspectRatioConstraint.AspectRatio = 19
+UIAspectRatioConstraint.Parent = Headers
+			
+
+			Section.Name = "Elements"
+			Section.Parent = SectionHead
 
 			Section.BackgroundColor3 = NEVERLOSE.Themes.SectionColor
 			Section.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1553,50 +1587,9 @@ Sound2.Ended:Connect(function()
 			UICorner.CornerRadius = UDim.new(0, 10)
 			UICorner.Parent = Section
 
-			Header.Name = "Header"
-			Header.Parent = Section
-			Header.AnchorPoint = Vector2.new(0.5, 0)
-			Header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			Header.BackgroundTransparency = 1.000
-			Header.BorderColor3 = Color3.fromRGB(0, 0, 0)
-			Header.BorderSizePixel = 0
-			Header.Position = UDim2.new(0.5, 0, 0.100000001, 0)
-			Header.Size = UDim2.new(1, 0, 0.1, 0)
-			Header.ZIndex = 5
-			Header.Font = Enum.Font.ArialBold
-			Header.Text = SectionName or "Section"
-			Header.TextColor3 = Color3.fromRGB(255, 255, 255)
-			Header.TextScaled = true
-			Header.TextSize = 8.000
-			Header.TextWrapped = true
-			Header.TextXAlignment = Enum.TextXAlignment.Left
-			Header.TextTransparency=1
-			TweenService:Create(Header,TweenInfo.new(0.3),{TextTransparency=0}):Play()
-
-			local AspectRatio = Instance.new("UIAspectRatioConstraint")
-
-			AspectRatio.Parent = Header
-            AspectRatio.AspectRatio = 19
-            AspectRatio.DominantAxis = Enum.DominantAxis.Width
-            AspectRatio.AspectType = Enum.AspectType.ScaleWithParentSize
-			
-			UIListLayout.Parent = Section
-			UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-			UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-			UIListLayout.Padding = UDim.new(0, 0)
-
-			lay.Name = "lay"
-			lay.Parent = Section
-			lay.BackgroundColor3 = NEVERLOSE.Themes.StrokeColor
-			lay.BorderColor3 = Color3.fromRGB(0, 0, 0)
-			lay.BorderSizePixel = 0
-			lay.Size = UDim2.new(0.970000029, 0, 0, 2)
-			lay.ZIndex = 5
-			lay.BackgroundTransparency=1
 			Section.BackgroundTransparency=1
 			UIStroke.Transparency=1
 
-			TweenService:Create(lay,TweenInfo.new(1),{BackgroundTransparency=0}):Play()
 			TweenService:Create(Section,TweenInfo.new(1),{BackgroundTransparency=0}):Play()
 			TweenService:Create(UIStroke,TweenInfo.new(1),{Transparency=0}):Play()
 
