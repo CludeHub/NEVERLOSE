@@ -1571,10 +1571,11 @@ Header.ZIndex = 10
 Header.TextXAlignment = Enum.TextXAlignment.Left
 Header.Parent = SectionHead
 			
-local UIAspectRatioConstraint = Instance.new('UIAspectRatioConstraint')
-UIAspectRatioConstraint.AspectRatio = 1
-UIAspectRatioConstraint.Parent = Header
-			
+local as = Instance.new('UIAspectRatioConstraint')
+as.AspectRatio = 19
+as.Parent = Header
+as.AspectType = 
+as.AspectType = Enum.AspectType.ScaleWithParentSize
 
 			Section.Name = "Section"
 			Section.Parent = SectionHead
