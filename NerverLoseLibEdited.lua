@@ -1586,10 +1586,10 @@ UIAspectRatioConstraint.Parent = Headers
 			Section.ZIndex = 5
 
 
-			UIListLayout_2.Parent = Section
-		UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Top
-		UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-		UIListLayout_2.Padding = UDim.new(0, 0)
+			UIListLayout.Parent = Section
+		UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Top
+		UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+		UIListLayout.Padding = UDim.new(0, 0)
 			
 			UICorner.CornerRadius = UDim.new(0, 10)
 			UICorner.Parent = Section
