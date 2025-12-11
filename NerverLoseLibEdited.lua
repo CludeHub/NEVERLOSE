@@ -1581,9 +1581,16 @@ UIAspectRatioConstraint.Parent = Headers
 			Section.BackgroundColor3 = NEVERLOSE.Themes.SectionColor
 			Section.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			Section.BorderSizePixel = 0
+			Section.Position = UDim2.new(0, 0, 0, 17)
 			Section.Size = UDim2.new(0.970000029, 0, 0, 0)
 			Section.ZIndex = 5
 
+
+			UIListLayout_2.Parent = Section
+		UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Top
+		UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+		UIListLayout_2.Padding = UDim.new(0, 0)
+			
 			UICorner.CornerRadius = UDim.new(0, 10)
 			UICorner.Parent = Section
 
