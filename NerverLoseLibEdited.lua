@@ -1556,7 +1556,7 @@ SectionHead.Parent = (parentname=="left"and Left) or (parentname=="right"and Rig
 
 Header.Name = "Header"
 Header.Position = UDim2.new(0.5,0,-0.009,0)
-Header.Size = UDim2.new(1,0,0.1,0)
+Header.Size = UDim2.new(1,0,0.6,0)
 Header.AnchorPoint = Vector2.new(0.5,0)
 Header.BackgroundColor3 = Color3.fromRGB(255,255,255)
 Header.BackgroundTransparency = 1
@@ -1572,11 +1572,11 @@ Header.TextXAlignment = Enum.TextXAlignment.Left
 Header.Parent = SectionHead
 			
 local UIAspectRatioConstraint = Instance.new('UIAspectRatioConstraint')
-UIAspectRatioConstraint.AspectRatio = 19
+UIAspectRatioConstraint.AspectRatio = 1
 UIAspectRatioConstraint.Parent = Header
 			
 
-			Section.Name = "Elements"
+			Section.Name = "Section"
 			Section.Parent = SectionHead
 
 			Section.BackgroundColor3 = NEVERLOSE.Themes.SectionColor
@@ -1596,7 +1596,7 @@ UIAspectRatioConstraint.Parent = Header
 			UICorner.Parent = Section
 
 			Section.BackgroundTransparency=1
-			UIStroke.Transparency=1
+			UIStroke.Transparency=0
 
 			TweenService:Create(Section,TweenInfo.new(1),{BackgroundTransparency=0}):Play()
 			TweenService:Create(UIStroke,TweenInfo.new(1),{Transparency=0}):Play()
