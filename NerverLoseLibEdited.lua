@@ -1574,7 +1574,6 @@ Header.Parent = SectionHead
 local as = Instance.new('UIAspectRatioConstraint')
 as.AspectRatio = 19
 as.Parent = Header
-as.AspectType = 
 as.AspectType = Enum.AspectType.ScaleWithParentSize
 
 			Section.Name = "Section"
