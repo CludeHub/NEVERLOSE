@@ -1576,6 +1576,21 @@ as.AspectRatio = 22
 as.Parent = Header
 as.AspectType = Enum.AspectType.ScaleWithParentSize
 
+local DropShadow2 = Instance.new('ImageLabel')
+DropShadow2.Position = UDim2.new(0.5, 0, 0.52, 0)
+DropShadow2.Size = UDim2.new(1, 30, 1, 28)
+DropShadow2.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow2.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
+DropShadow2.BackgroundTransparency = 1
+DropShadow2.BorderSizePixel = 0
+DropShadow2.Image = "rbxassetid://6014261993"
+DropShadow2.ImageColor3 = Color3.fromRGB(0, 17, 33)
+DropShadow2.ZIndex = 4
+DropShadow2.Parent = SectionHead
+DropShadow2.Rotation = 0.0001
+DropShadow2.ScaleType = Enum.ScaleType.Slice
+DropShadow2.SliceCenter = Rect.new(49, 49, 450, 450)
+
 			Section.Name = "Section"
 			Section.Parent = SectionHead
 
