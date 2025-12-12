@@ -291,7 +291,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,name,UICustomSize)
 	
 	local WindowFunctinos={}
 	local ToggleUI=false
-	local ooldsize=UICustomSize or UDim2.new(0.5530999988, 0, 0.980999971, 0)
+	local ooldsize=UICustomSize or UDim2.new(0.5530999988, 30, 0.980999971, 0)
 	local Tabs={}
 
 	local ScreenGui = Instance.new("ScreenGui")
@@ -477,7 +477,7 @@ end
 
 local aspect = Instance.new("UIAspectRatioConstraint")
 aspect.Parent = parentFrame
-aspect.AspectRatio = 1.3
+aspect.AspectRatio = 1.4
 
 	-- About Frame
 local aboutFrame = Instance.new("Frame", ScreenGui)
@@ -677,39 +677,39 @@ local ABOUT = CoreGui:WaitForChild("NEVERLOSE"):WaitForChild("AboutFrame")
 -- DPI table (split into Size + Position for clarity)
 local dpiSizes = {
     ["Auto"] = {
-        NEVERLOSE = UDim2.new(0.455, 0, 0.825, 0), -- size
+        NEVERLOSE = UDim2.new(0.455, 30, 0.825, 0), -- size
         ABOUT = UDim2.new(0.190007001, 0, 0.450000614, 0), -- position
     },
     ["20%"] = {
-        NEVERLOSE = UDim2.new(0.459999988, 0, 0.789999971, 0),
+        NEVERLOSE = UDim2.new(0.459999988, 30, 0.789999971, 0),
         ABOUT = UDim2.new(0.20007001, 0, 0.460000614, 0),
     },
     ["30%"] = {
-        NEVERLOSE = UDim2.new(0.469999988, 0, 0.7909999971, 0),
+        NEVERLOSE = UDim2.new(0.469999988, 30, 0.7909999971, 0),
         ABOUT = UDim2.new(0.21007001, 0, 0.470000614, 0),
     },
     ["40%"] = {
-        NEVERLOSE = UDim2.new(0.479999988, 0, 0.8009999971, 0),
+        NEVERLOSE = UDim2.new(0.479999988, 30, 0.8009999971, 0),
         ABOUT = UDim2.new(0.22007001, 0, 0.480000614, 0),
     },
     ["50%"] = {
-        NEVERLOSE = UDim2.new(0.489999988, 0, 0.81009999971, 0),
+        NEVERLOSE = UDim2.new(0.489999988, 30, 0.81009999971, 0),
         ABOUT = UDim2.new(0.23007001, 0, 0.490000614, 0),
     },
     ["60%"] = {
-        NEVERLOSE = UDim2.new(0.490999988, 0, 0.82009999971, 0),
+        NEVERLOSE = UDim2.new(0.490999988, 30, 0.82009999971, 0),
         ABOUT = UDim2.new(0.24007001, 0, 0.50000614, 0),
     },
     ["70%"] = {
-        NEVERLOSE = UDim2.new(0.500999988, 0, 0.83009999971, 0),
+        NEVERLOSE = UDim2.new(0.500999988, 30, 0.83009999971, 0),
         ABOUT = UDim2.new(0.24007001, 0, 0.51000614, 0),
     },
     ["80%"] = {
-        NEVERLOSE = UDim2.new(0.510999988, 0, 0.84009999971, 0),
+        NEVERLOSE = UDim2.new(0.510999988, 30, 0.84009999971, 0),
         ABOUT = UDim2.new(0.2, 0, 0.53000614, 0),
     },
     ["100%"] = {
-        NEVERLOSE = UDim2.new(0.5530999988, 0, 0.980999971, 0),
+        NEVERLOSE = UDim2.new(0.5530999988, 30, 0.980999971, 0),
         ABOUT = UDim2.new(0.23, 0, 0.53, 0),
     }
 }
