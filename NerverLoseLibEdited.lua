@@ -900,8 +900,8 @@ Sound2.Ended:Connect(function()
 	Frame_2.BackgroundColor3 = NEVERLOSE.Themes.MewColor1
 	Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	Frame_2.BorderSizePixel = 0
-	Frame_2.Position = UDim2.new(0.223214373, 0, 0, 0)
-	Frame_2.Size = UDim2.new(0.774634778, 0, 1, 0)
+	Frame_2.Position = UDim2.new(0.223214373, 0, 0.091, 0)
+	Frame_2.Size = UDim2.new(0.774634778, 0, 0.91, 0)
 	Frame_2.ZIndex = 2
 	
 	UICorner_2.CornerRadius = UDim.new(0, 12)
@@ -910,7 +910,7 @@ Sound2.Ended:Connect(function()
 	Frame_3.Parent = Frame
 	Frame_3.Name = "Frame_3"
 	Frame_3.BackgroundColor3 = NEVERLOSE.Themes.MewColor2
-	Frame_3.BackgroundTransparency = 0.900
+	Frame_3.BackgroundTransparency = 0.4
 	Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	Frame_3.BorderSizePixel = 0
 	Frame_3.Position = UDim2.new(0.223214373, 0, 0, 0)
