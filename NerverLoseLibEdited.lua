@@ -874,11 +874,11 @@ Sound2.Ended:Connect(function()
 		ImageButtons.BackgroundTransparency = 1.000
 		ImageButtons.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		ImageButtons.BorderSizePixel = 0
-		ImageButtons.Position = UDim2.new(0.8970207, 0, 0.0139103699, 0)
+		ImageButtons.Position = UDim2.new(0.8970207, 0, 0.0189103699, 0)
 		ImageButtons.Size = UDim2.new(0.0400000036, 0, 0.03400000036, 0)
 		ImageButtons.SizeConstraint = Enum.SizeConstraint.RelativeYY
 		ImageButtons.ZIndex = 4
-		ImageButtons.Image = "http://www.roblox.com/asset/?id=6031280882"
+		ImageButtons.Image = "http://www.roblox.com/asset/?id=82272638714622"
 		ImageButtons.ScaleType = Enum.ScaleType.Fit
 
 		ImageButtons.MouseButton1Click:Connect(function()
