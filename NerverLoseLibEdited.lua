@@ -1572,7 +1572,7 @@ Header.TextXAlignment = Enum.TextXAlignment.Left
 Header.Parent = SectionHead
 			
 local as = Instance.new('UIAspectRatioConstraint')
-as.AspectRatio = 19
+as.AspectRatio = 22
 as.Parent = Header
 as.AspectType = Enum.AspectType.ScaleWithParentSize
 
