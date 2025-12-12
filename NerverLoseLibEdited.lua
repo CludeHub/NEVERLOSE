@@ -1586,6 +1586,11 @@ as.AspectType = Enum.AspectType.ScaleWithParentSize
 			Section.Size = UDim2.new(1, 0, 0, 0)
 			Section.ZIndex = 5
 
+local UIStrokes = Instance.new('UIStroke')
+UIStrokes.Color = Color3.fromRGB(3,35,50)
+UIStrokes.Transparency = 0.20000000298023224
+UIStrokes.Parent = Section
+
 
 			UIListLayout.Parent = Section
 		UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Top
@@ -1596,7 +1601,7 @@ as.AspectType = Enum.AspectType.ScaleWithParentSize
 			UICorner.Parent = Section
 
 			Section.BackgroundTransparency=1
-			UIStroke.Transparency=0
+			UIStroke.Transparency=1
 
 			TweenService:Create(Section,TweenInfo.new(1),{BackgroundTransparency=0}):Play()
 			TweenService:Create(UIStroke,TweenInfo.new(1),{Transparency=0}):Play()
@@ -1835,6 +1840,16 @@ Sound2.Ended:Connect(function()
 				Toggle.Size = UDim2.new(1, 0, -0.351014495, 0)
 				Toggle.ZIndex = 5
 
+				
+local Line = Instance.new('Frame')
+Line.Position = UDim2.new(0.07000000029802322,0,1,0)
+Line.Size = UDim2.new(0.8700000047683716,0,0.003000000026077032,0)
+Line.AnchorPoint = Vector2.new(0,0)
+Line.BackgroundColor3 = Color3.fromRGB(3,35,50)
+Line.BackgroundTransparency = 0.699999988079071
+Line.ZIndex = 10
+Line.Parent = Toggle
+
 				UIAspectRatioConstraint.Parent = Toggle
 				UIAspectRatioConstraint.AspectRatio = 7.000
 				UIAspectRatioConstraint.AspectType = Enum.AspectType.ScaleWithParentSize
@@ -1985,6 +2000,15 @@ Sound2.Ended:Connect(function()
 				Keybind.Position = UDim2.new(0.0500000231, 0, 0.601014614, 0)
 				Keybind.Size = UDim2.new(1, 0, -0.351014495, 0)
 				Keybind.ZIndex = 5
+
+				local Line = Instance.new('Frame')
+Line.Position = UDim2.new(0.07000000029802322,0,1,0)
+Line.Size = UDim2.new(0.8700000047683716,0,0.003000000026077032,0)
+Line.AnchorPoint = Vector2.new(0,0)
+Line.BackgroundColor3 = Color3.fromRGB(3,35,50)
+Line.BackgroundTransparency = 0.699999988079071
+Line.ZIndex = 10
+Line.Parent = Keybind
 
 				UIAspectRatioConstraint.Parent = Keybind
 				UIAspectRatioConstraint.AspectRatio = 7.000
@@ -2147,6 +2171,15 @@ Sound2.Ended:Connect(function()
 				Slider.Position = UDim2.new(0.0500000231, 0, 0.601014614, 0)
 				Slider.Size = UDim2.new(1, 0, -0.351014495, 0)
 				Slider.ZIndex = 5
+
+				local Line = Instance.new('Frame')
+Line.Position = UDim2.new(0.07000000029802322,0,1,0)
+Line.Size = UDim2.new(0.8700000047683716,0,0.003000000026077032,0)
+Line.AnchorPoint = Vector2.new(0,0)
+Line.BackgroundColor3 = Color3.fromRGB(3,35,50)
+Line.BackgroundTransparency = 0.699999988079071
+Line.ZIndex = 10
+Line.Parent = Slider
 
 				UIAspectRatioConstraint.Parent = Slider
 				UIAspectRatioConstraint.AspectRatio = 7.000
@@ -2344,6 +2377,17 @@ Sound2.Ended:Connect(function()
 				Dropdown.Size = UDim2.new(1, 0, -0.351014495, 0)
 				Dropdown.ZIndex = 5
 
+
+				local Line = Instance.new('Frame')
+Line.Position = UDim2.new(0.07000000029802322,0,1,0)
+Line.Size = UDim2.new(0.8700000047683716,0,0.003000000026077032,0)
+Line.AnchorPoint = Vector2.new(0,0)
+Line.BackgroundColor3 = Color3.fromRGB(3,35,50)
+Line.BackgroundTransparency = 0.699999988079071
+Line.ZIndex = 10
+Line.Parent = Dropdown
+
+				
 				UIAspectRatioConstraint.Parent = Dropdown
 				UIAspectRatioConstraint.AspectRatio = 7.000
 				UIAspectRatioConstraint.AspectType = Enum.AspectType.ScaleWithParentSize
