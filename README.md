@@ -1,14 +1,28 @@
+# NEVERLOSE CS2 UI NEW
+
+# Load the Library
 ```lua
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/NEVERLOSE/refs/heads/main/NEVERLOSE-CS2-NEW-SOURCE.lua"))()
+```
 
+# Window
+```lua
 local Window = Library:AddWindow("Neverlose", "rbxassetid://0", "Counter Strike 2")
+```
+
+# Tab 
+```lua
 local RageTab = Window:AddTab("Rage", "rbxassetid://123456")
+```
 
--- MAIN
+# Section
+```lua
 local MainSection = RageTab:AddSection("MAIN", "left")
+```
 
-local b = MainSection:AddToggle("Enabled", true, function(v) print("Enabled:", v) end)
+```
+MainSection:AddToggle("Enabled", true, function(v) print("Enabled:", v) end)
 
 local b = MainSection:AddToggle("Silent Aim", true, function(v) print("Silent Aim:", v) end)
 
@@ -23,7 +37,7 @@ a:AddToggle("Automatic Fire", true, function(v) print("Automatic Fire:", v) end)
 MainSection:AddSlider("Field of View", 1, 180, 74.8, function(v) print("FOV:", v) end, "°")
 
 
-SelectionSection:AddDropdown("Multipoint", {"Arms, Legs, Extremities"}, function(v) print("Multipoint:", v) end)
+MainSection:AddDropdown("Multipoint", {"Arms, Legs, Extremities"}, function(v) print("Multipoint:", v) end)
 
 Window:LoadSavedConfig()
 ```
