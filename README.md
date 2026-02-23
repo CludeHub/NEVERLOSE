@@ -65,6 +65,16 @@ SelectionSection:AddDropdown("Target", {"Highest Damage", "Closest", "Random"}, 
 end)
 ```
 
+### Colorpicker
+```lua
+local color = SelectionSection:AddColorpicker("Bruh", Color3.fromRGB(255,255,255), function(val)
+    print("Color:", val)
+end)
+
+color:Get()
+color:Set(Color3.fromRGB(255,255,255))
+```
+
 ---
 
 ## 🎨 6. Add Settings to Elements
@@ -74,13 +84,6 @@ local toggle = MainSection:AddToggle("Silent Aim", true, function(v)
 end)
 
 local settings = toggle:AddSettings()
-
-local color = settings:AddColorpicker("Bruh", Color3.fromRGB(255,255,255), function(val)
-    print("Color:", val)
-end)
-
-color:Get()
-color:Set(Color3.fromRGB(255,255,255))
 
 settings:AddToggle("Automatic Fire", true, function(v)
     print("Automatic Fire:", v)
