@@ -102,6 +102,9 @@ Restores the user’s last saved state (toggles, sliders, colors, etc.).
 
 ## 8. Full Example
 ```lua
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/NEVERLOSE/refs/heads/main/NEVERLOSE-CS2-NEW-SOURCE.lua"))()
+
 local Window = Library:AddWindow("Neverlose", "rbxassetid://118608145176297", "Counter Strike 2")  
 
 local RageTab = Window:AddTab("Rage", "crosshair")  
