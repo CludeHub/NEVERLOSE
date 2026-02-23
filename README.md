@@ -1,11 +1,11 @@
-# 🧠 Neverlose UI Library — Documentation
+# Neverlose UI Library — Documentation
 
 ### Overview
 This documentation explains how to use the **Neverlose UI Library**, including how to create a window, add tabs, organize sections, and use features such as toggles, sliders, dropdowns, color pickers, and saved configurations.
 
 ---
 
-## 🧩 1. Loader Setup
+## 1. Loader Setup
 Load the library from your desired source:
 ```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/NEVERLOSE/refs/heads/main/NEVERLOSE-CS2-NEW-SOURCE.lua"))()
@@ -13,7 +13,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Clude
 
 ---
 
-## 🪟 2. Create a Window
+## 2. Create a Window
 ```lua
 local Window = Library:AddWindow("Neverlose", "rbxassetid://118608145176297", "Counter Strike 2")
 ```
@@ -23,7 +23,7 @@ local Window = Library:AddWindow("Neverlose", "rbxassetid://118608145176297", "C
 
 ---
 
-## 🗂️ 3. Add Tabs
+## 3. Add Tabs
 ```lua
 local RageTab = Window:AddTab("Rage", "crosshair")
 ```
@@ -32,7 +32,7 @@ local RageTab = Window:AddTab("Rage", "crosshair")
 
 ---
 
-## ⚙️ 4. Add Sections
+## 4. Add Sections
 ```lua
 local MainSection = RageTab:AddSection("MAIN", "left")
 ```
@@ -42,7 +42,7 @@ local MainSection = RageTab:AddSection("MAIN", "left")
 
 ---
 
-## 🎛️ 5. Add Features
+## 5. Add Features
 
 ### Toggle
 ```lua
@@ -77,7 +77,7 @@ color:Set(Color3.fromRGB(255,255,255))
 
 ---
 
-## 🎨 6. Add Settings to Elements
+## 6. Add Settings to Elements
 ```lua
 local toggle = MainSection:AddToggle("Silent Aim", true, function(v)
     print("Silent Aim:", v)
@@ -92,7 +92,7 @@ end)
 
 ---
 
-## 🧠 7. Load Saved Config
+## 7. Load Saved Config
 ```lua
 Window:LoadSavedConfig()
 ```
@@ -100,7 +100,7 @@ Restores the user’s last saved state (toggles, sliders, colors, etc.).
 
 ---
 
-## 🧾 8. Full Example
+## 8. Full Example
 ```lua
 local Window = Library:AddWindow("Neverlose", "rbxassetid://118608145176297", "Counter Strike 2")  
 
