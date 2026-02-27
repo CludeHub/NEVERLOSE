@@ -92,7 +92,16 @@ end)
 
 ---
 
-## 7. Load Saved Config
+## 7. Accordions
+```lua
+local acc = MainSection:AddAccordion("Hatdogs")
+acc:AddToggle("Option A", false, function(v) print(v) end)
+acc:AddSlider("Speed", 0, 100, 50, function(v) print(v) end, "%")
+acc:AddDropdown("Mode", {"A", "B", "C"}, function(v) print(v) end)
+acc:AddColorpicker("Color", Color3.fromRGB(255, 0, 0), function(c) print(c) end)
+```
+
+## 8. Load Saved Config
 ```lua
 Window:LoadSavedConfig()
 ```
